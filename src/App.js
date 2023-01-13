@@ -17,7 +17,7 @@ const hideCartHandler = () => {
   return (
     <React.Fragment>
       {cartIsShown && <Cart />}
-        <Header />
+        <Header onShowCart={showCartHandler} />
         <main>
           <Meals></Meals>
         </main>  
